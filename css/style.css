@@ -257,6 +257,67 @@ footer{
         display:none;
      }
 
+
+     #nav-links ul {
+        display: block;
+        margin-top: 3em;
+      }
+
+      .header-row .fa {
+        font-size: 2rem;
+        display: block;
+        position: absolute;
+        right: 5%;
+        top: 12%;
+        cursor: pointer;
+        padding: 15px 12px;
+        color: #000;
+      }
+    
+      .header-row .fa-close {
+        color: #fff;
+        font-size: 25px;
+        position: absolute;
+        top: 0;
+        left: 3px;
+      }
+    
+      #nav-links {
+        background: var(--orange-color);
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        position: fixed;
+        text-align: left;
+        z-index: 1;
+        transition: 0.5s;
+        color: #fff;
+        overflow: hidden;
+      }
+    
+      nav ul li {
+        display: block;
+        padding: 0.7em 0;
+      }
+    
+      nav ul li a {
+        color: #fff;
+      }
+    
+      nav ul li a:after {
+        display: none;
+      }
+    
+      nav ul li a:hover {
+        color: var(--red-color);
+      }
+    
+      .site-logo img {
+        width: 100px;
+      }
+    
+    
      .logo{
         width:70px;
      }
@@ -264,8 +325,6 @@ footer{
      header{
         width: 100%;
         height:55vh;
-        object-fit:cover;
-        background-size: cover; 
         background-position: center; 
       }
 
