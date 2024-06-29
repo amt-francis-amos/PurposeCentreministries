@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width:180px;
+    width:240px;
 }
 
 .active {
@@ -52,7 +52,7 @@ header {
 
 .header-row {
     width: 100%;
-    height: 88px;
+    height:88px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position:fixed;
@@ -64,6 +64,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position:relative;
+    top:-12px;
+   
 }
 
 nav ul li {
@@ -255,8 +258,12 @@ footer{
 
 @media(max-width:900px){
 
+    
+
     .navbar{
         padding:0.4em 1em;
+        position:relative;
+        top:-1px;
     }
 
      nav ul{
@@ -279,7 +286,7 @@ footer{
         top: 12%;
         cursor: pointer;
         padding: 15px 12px;
-        color: #000;
+        color:var(--orange-color);
       }
     
       .header-row .fa-close {
@@ -327,7 +334,7 @@ footer{
     
     
      .logo{
-        width:70px;
+        width:170px;
      }
 
      header{
