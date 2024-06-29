@@ -30,7 +30,6 @@ body {
 }
 
 
-
 .container {
     max-width: 1380px;
     margin: 0 auto;
@@ -43,6 +42,11 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+
+.header-row .fa{
+    display:none;
 }
 
 .header-row {
