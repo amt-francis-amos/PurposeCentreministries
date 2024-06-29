@@ -257,7 +257,9 @@ footer{
         display:none;
      }
 
-
+     .active{
+        color:var(--light-orange)
+     }
      #nav-links ul {
         display: block;
         margin-top: 3em;
