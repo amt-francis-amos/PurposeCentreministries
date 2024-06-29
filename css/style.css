@@ -213,8 +213,7 @@ nav ul li a:hover::after {
 }
 
 .welcome-info p{
-    line-height:1.7;
-    font-size:0.8rem;
+    font-size:0.9rem;
 }
 
 .amo{
