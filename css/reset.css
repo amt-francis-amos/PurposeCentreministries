@@ -1,0 +1,17 @@
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+
+.section-title{
+    text-align:center;
+    font-size:30px;
+    font-weight:700;
+    color:var(--orange-color);
+}
+

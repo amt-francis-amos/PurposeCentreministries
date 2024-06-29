@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --orange-color: #a14c38;
+    --grey-color: #f7f6f2;
+    --black-color: #000;
+    --white-color: #fff;
+    --light-orange: #e5a75e;
+    --footer-color:#8ca0a1;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.logo {
+    width: 84px;
+}
+
+.active {
+    color: var(--orange-color);
+    font-weight: 700;
+}
+
+
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/Hero-Image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-row {
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    position:fixed;
+    top:0;
+    z-index:1;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: var(--black-color);
+    font-size:0.8rem;
+    font-weight: 600;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius:5px;
+    background-color: var(--orange-color);
+    transition: 0.3s;
+    margin: 3px auto;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* ----- END OF HEADER STYLING----- */
+
+/*  ---- HERO STYLING ------ */
+
+.main-content {
+    width: 100%;
+    height: 50vh;
+    position:absolute;
+    top:35%;
+   
+}
+
+.main-content h2 {
+    color:#ffff;
+    font-size: 1.7rem;
+    font-weight: 600;
+   
+}
+
+.main-content h1 {
+    color: var(--light-orange);
+    font-weight: 800;
+    font-size: 4rem;
+    max-width:800px;
+}
+
+.main-content p {
+    color: var(--grey-color);
+    font-size: 1.2rem;
+    max-width: 500px;
+    margin-top: 1.5em;
+}
+
+
+/* ----- SLIDE IN---- */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.main-content {
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+
+
+.welcome-btn .btn {
+    background-color:var(--orange-color);
+    display:inline-block;
+    margin-top:2em;
+    padding:15px 30px;
+    color:var(--white-color);
+    border-radius:8px;
+    font-weight:600;
+}
+
+.welcome-btn .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white-color);
+}
+
+.welcome-btn .btn:focus {
+    outline: none;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+.message-animate {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+
+
+
+/* ----- END OF HERO STYLING----- */
+
+
+/* ------- WELCOME MESSAGE ---- */
+
+.welc-message{
+    background:var(--grey-color);
+    padding:40px 0;
+}
+
+.welc-message h1{
+    text-align:center;
+    font-size:2rem;
+    margin:2em;
+}
+
+.welc-message h1::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    border-radius:5px;
+    background-color: var(--orange-color);
+    margin:0.2em auto;
+}
+
+
+.welcome-content{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+}
+
+.welcome-info p{
+    line-height:1.7;
+    font-size:0.8rem;
+}
+
+.amo{
+    width:80%;
+    margin-bottom:1em;
+}
+
+.welcome-info h2{
+    font-size:1.3rem;
+    color:var(--orange-color);
+    margin-top:1.5em;
+}
+
+.welcome-info h2 span{
+    color:var(--black-color);
+}
+
+
+
+
+/* ----- VISION & MISSION STYLING ----- */
+.vision-mission {
+    padding: 50px 0;
+  }
+  
+  
+
+  /* ---------FOOTER STYLING ------- */
+footer{
+    padding:100px 0;
+    background:var(--footer-color);
+}
