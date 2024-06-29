@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 84px;
+    width:180px;
 }
 
 .active {
@@ -115,6 +115,8 @@ nav ul li a:hover::after {
     color: var(--light-orange);
     font-weight: 800;
     font-size: 4rem;
+    line-height:1.1;
+    margin-top:0.4em;
     max-width:800px;
 }
 
