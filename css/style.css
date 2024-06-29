@@ -14,6 +14,7 @@
     --white-color: #fff;
     --light-orange: #e5a75e;
     --footer-color:#8ca0a1;
+    --ash-color:#446886;
 }
 
 body {
@@ -71,7 +72,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--black-color);
+    color: var(--ash-color);
     font-size:0.8rem;
     font-weight: 600;
 }
@@ -248,7 +249,7 @@ footer{
 }
 
 
-
+/* ------- RESPONSIVENESS---------- */
 
 @media(max-width:900px){
 
