@@ -39,7 +39,7 @@ body {
 header {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/Hero-Image.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url('../images/Hero-Image.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -263,7 +263,7 @@ footer{
 
      header{
         width: 100%;
-        height: 45vh;
+        height:55vh;
         object-fit:cover;
         background-size: cover; 
         background-position: center; 
@@ -271,7 +271,7 @@ footer{
 
 
       .main-content{
-          top:18%;
+          top:23%;
           text-align:center;
       }
 
@@ -294,8 +294,6 @@ footer{
             font-size:0.8rem;
             padding:10px 20px;
       }
-
-
 
       .welc-message h1{
         font-size:1rem;
