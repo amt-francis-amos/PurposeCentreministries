@@ -296,10 +296,14 @@ footer{
       }
 
 
-  
 
       .welc-message h1{
-        font-size:1.2rem;
+        font-size:1rem;
+      }
+
+      .welc-message h1::after{
+          width:70px;
+          margin:0.5em auto;
       }
 
       .amo{
