@@ -149,7 +149,7 @@ nav ul li a:hover::after {
 
 
 
-.welcome-btn .btn {
+.btn {
     background-color:var(--orange-color);
     display:inline-block;
     margin-top:2em;
@@ -157,30 +157,16 @@ nav ul li a:hover::after {
     color:var(--white-color);
     border-radius:8px;
     font-weight:600;
+    transition:0.3s;
 }
 
-.welcome-btn .btn:hover {
+.btn:hover {
     background: transparent;
     border: 1px solid var(--white-color);
 }
 
 .welcome-btn .btn:focus {
     outline: none;
-}
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px); 
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0); 
-    }
-}
-
-.message-animate {
-    animation: fadeInUp 1s ease-in-out;
 }
 
 
@@ -216,6 +202,7 @@ nav ul li a:hover::after {
 .welcome-content{
     display:grid;
     grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:2em;
 }
 
 .welcome-info p{
@@ -242,8 +229,44 @@ nav ul li a:hover::after {
 
 /* ----- VISION & MISSION STYLING ----- */
 .vision-mission {
-    padding: 50px 0;
+    padding: 100px 0;
   }
+
+
+.vision-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:2em;
+}
+
+
+.vision-details img{
+    max-width:80%;
+    border-radius:20px;
+}
+
+.vision-details h2{
+    margin-bottom:0.7em;
+    font-family:cursive;
+    font-size:1.4rem;
+    color:var(--orange-color)
+}
+
+
+.vision-details h1{
+    font-size:4rem;
+    color:#010813;
+    margin-bottom:0.3em;
+}
+
+
+.vision-btn:hover{
+     background:transparent;
+     border:1px solid var(--orange-color);
+     color:var(--orange-color)
+}
+
+
   
   
 
