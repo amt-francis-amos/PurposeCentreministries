@@ -243,6 +243,13 @@ nav ul li a:hover::after {
 .vision-details img{
     max-width:80%;
     border-radius:20px;
+    transition:0.3s;
+    filter: grayscale(0);
+}
+
+.vision-details img:hover{
+    transform:scale(1.1);
+    filter: grayscale(1);
 }
 
 .vision-details h2{
